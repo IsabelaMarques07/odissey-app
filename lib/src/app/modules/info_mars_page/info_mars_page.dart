@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:odysseyapp/src/app/components/TitlePattern/title_pattern.dart';
 import 'package:odysseyapp/src/app/components/input_pattern/input_pattern.dart';
+import 'package:odysseyapp/src/app/components/title_pattern/title_pattern.dart';
 import 'package:odysseyapp/src/app/modules/info_mars_page/info_mars_controller.dart';
 
 class InfoMarsPage extends StatefulWidget{
@@ -27,6 +27,11 @@ class _InfoMarsPage extends State<InfoMarsPage>{
   @override 
   Widget build(BuildContext context){
     return Scaffold(
+      appBar: AppBar(
+        leading: const BackButton(),
+        backgroundColor: Colors.transparent,
+         elevation: 0,
+      ),
           body: Padding(padding: const EdgeInsets.only(
           left: 40,
           right: 40,
@@ -48,7 +53,6 @@ class _InfoMarsPage extends State<InfoMarsPage>{
             Text(controller.description),
       ],
           )
-
       ),
         
       )
@@ -56,7 +60,6 @@ class _InfoMarsPage extends State<InfoMarsPage>{
         floatingActionButton: FloatingActionButton(onPressed: (){
         controller.changeBodyFunction(termController.text);
         },
-        backgroundColor: const Color.fromARGB(255, 62, 137, 137) ,
         child: const Icon(Icons.add, color: Colors.black),
         ),
     );
