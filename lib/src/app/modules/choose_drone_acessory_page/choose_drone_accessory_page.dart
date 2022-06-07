@@ -3,6 +3,7 @@ import 'package:odysseyapp/src/app/components/button_pattern/button_pattern.dart
 import 'package:odysseyapp/src/app/components/choose_card/choose_card.dart';
 import 'package:odysseyapp/src/app/components/title_pattern/title_pattern.dart';
 import 'package:odysseyapp/src/app/modules/choose_drone_acessory_page/choose_drone_acessory_controller.dart';
+import 'package:odysseyapp/src/app/modules/order_made_page/order_made_page.dart';
 
 class ChooseDroneAcessoryPage extends StatefulWidget{
 
@@ -56,7 +57,7 @@ class _ChooseDroneAcessoryPage extends State<ChooseDroneAcessoryPage>{
           const SizedBox(height: 100,),
           Text('Valor total: R\$'+controller.amount.toString(), style: const TextStyle(fontSize: 20),),
           const SizedBox(height: 30),
-          ButtonPattern(onPressed: (){}, buttonText: 'Finalizar'),
+          ButtonPattern(onPressed: (){Navigator.push(context, MaterialPageRoute(builder: (context) => OrderMadePage()),);}, buttonText: 'Finalizar'),
         ],),
         )
       )
