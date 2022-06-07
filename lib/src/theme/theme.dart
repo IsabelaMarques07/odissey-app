@@ -1,27 +1,13 @@
 import 'package:flutter/material.dart';
 
-Map<int, Color> color =
-{
-  50:Color.fromRGBO(62,137,137, .1),
-  100:Color.fromRGBO(62,137,137, .2),
-  200:Color.fromRGBO(62,137,137, .3),
-  300:Color.fromRGBO(62,137,137, .4),
-  400:Color.fromRGBO(62,137,137, .5),
-  500:Color.fromRGBO(62,137,137, .6),
-  600:Color.fromRGBO(62,137,137, .7),
-  700:Color.fromRGBO(62,137,137, .8),
-  800:Color.fromRGBO(62,137,137, .9),
-  900:Color.fromRGBO(62,137,137, 1),
-};
 
 ThemeData darkTheme = ThemeData(
   brightness: Brightness.dark,
-  primarySwatch: MaterialColor(900, color),
   accentColor: const Color.fromARGB(255, 62 , 137, 137),
   elevatedButtonTheme: ElevatedButtonThemeData(
     style: ElevatedButton.styleFrom(
-      primary: MaterialColor(900, color),
-      onPrimary: Color.fromARGB(255, 30 , 30, 30),
+      primary:Color.fromRGBO(62,137,137, 1),
+      onPrimary: Colors.black,
     ),
   ),
     inputDecorationTheme: const InputDecorationTheme(
