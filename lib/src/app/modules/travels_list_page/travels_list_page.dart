@@ -3,7 +3,7 @@ import 'package:odysseyapp/src/app/components/input_pattern/input_pattern.dart';
 import 'package:odysseyapp/src/app/components/title_pattern/title_pattern.dart';
 import 'package:odysseyapp/src/app/components/travel_card/travel_card.dart';
 import 'package:odysseyapp/src/app/models/Travel.dart';
-
+import '../../utils/export.dart';
 class TravelsListPage extends StatefulWidget{
   @override 
   State<StatefulWidget> createState(){
@@ -47,7 +47,7 @@ class _TravelsListPage extends State<TravelsListPage>{
           TitlePattern(titleText: "Gerencie suas próximas idas à Marte"),
           const SizedBox(height: 20,),
           InputPattern(
-            label:'Código da viagem',
+            label: code,
             focusNode: travelCodeFocus,
             userInputController: travelCodeController,
             onEditingComplete: (){
@@ -56,7 +56,7 @@ class _TravelsListPage extends State<TravelsListPage>{
           ),
           const SizedBox(height: 15),
           InputPattern(
-            label:'Data da viagem',
+            label: date,
             focusNode: travelDateFocus,
             userInputController: travelDateController
             ),

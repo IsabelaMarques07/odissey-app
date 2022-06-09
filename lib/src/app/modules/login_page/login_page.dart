@@ -25,7 +25,7 @@ class LoginPage extends StatelessWidget {
                 height: 30,
               ),
               TitlePattern(
-                titleText: 'OdysseyApp',
+                titleText: nameApp,
               ),
               const SizedBox(height: 15),
               InputPattern(label: eMail),
@@ -41,7 +41,7 @@ class LoginPage extends StatelessWidget {
                       ),
                     );
                   },
-                  buttonText: 'Entrar'),
+                  buttonText: login),
               const SizedBox(height: 15),
             ],
           ),

@@ -4,6 +4,7 @@ import 'package:odysseyapp/src/app/components/choose_card/choose_card.dart';
 import 'package:odysseyapp/src/app/components/title_pattern/title_pattern.dart';
 import 'package:odysseyapp/src/app/modules/choose_drone_acessory_page/choose_drone_acessory_controller.dart';
 import 'package:odysseyapp/src/app/modules/order_made_page/order_made_page.dart';
+import 'package:odysseyapp/src/app/utils/export.dart';
 
 class ChooseDroneAcessoryPage extends StatefulWidget {
   @override
@@ -106,7 +107,7 @@ class _ChooseDroneAcessoryPage extends State<ChooseDroneAcessoryPage> {
                               builder: (context) => OrderMadePage()),
                         );
                       },
-                      buttonText: 'Finalizar'),
+                      buttonText: finishButton),
                 ],
               ),
             )));
