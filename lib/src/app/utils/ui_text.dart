@@ -1,3 +1,9 @@
 const String eMail = 'E-mail';
 const String password = 'Senha';
 const String login = 'Entrar';
+const String nameApp = 'OdysseyApp';
+const String buttonHome = 'Tela Inicial';
+const String code = 'Código da viagem';
+const String date = 'Data da viagem';
+const String nextButton = 'Próximo';
+const String finishButton = 'Finalizar';

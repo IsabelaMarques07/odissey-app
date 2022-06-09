@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:odysseyapp/src/app/components/button_pattern/button_pattern.dart';
 import 'package:odysseyapp/src/app/components/title_pattern/title_pattern.dart';
 import 'package:odysseyapp/src/app/modules/home/home_page.dart';
-
+import '../../utils/export.dart';
 class OrderMadePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -40,7 +40,7 @@ class OrderMadePage extends StatelessWidget {
                       ),
                     );
                   },
-                  buttonText: 'Tela Inicial'),
+                  buttonText: buttonHome),
             ]),
           ),
         ));

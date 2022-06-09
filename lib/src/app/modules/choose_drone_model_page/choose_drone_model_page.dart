@@ -4,7 +4,7 @@ import 'package:odysseyapp/src/app/components/choose_card/choose_card.dart';
 import 'package:odysseyapp/src/app/components/title_pattern/title_pattern.dart';
 import 'package:odysseyapp/src/app/modules/choose_drone_acessory_page/choose_drone_accessory_page.dart';
 import 'package:odysseyapp/src/app/modules/choose_drone_model_page/choose_drone_model_controller.dart';
-
+import '../../utils/export.dart';
 class ChooseDroneModelPage extends StatefulWidget {
   @override
   State<StatefulWidget> createState() {
@@ -101,7 +101,7 @@ class _ChooseDroneModelPage extends State<ChooseDroneModelPage> {
                               builder: (context) => ChooseDroneAcessoryPage()),
                         );
                       },
-                      buttonText: 'Próximo'),
+                      buttonText: nextButton),
                 ],
               ),
             )));
