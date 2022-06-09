@@ -44,8 +44,9 @@ class HomePage extends StatelessWidget {
           showDialog(
             context: context,
             builder: (context) => const AlertDialog(
-              title: Text('Pop-up'),
-              content: Text('Lorem ipsum...'),
+              title: Text('Criadoras do Odyssey App'),
+              content: Text(
+                  'Nome: Danielle Licinio RM: 85715   Nome: Isabela Marques RM: 86386  Turma: 3ºSIR'),
             ),
           );
         },
