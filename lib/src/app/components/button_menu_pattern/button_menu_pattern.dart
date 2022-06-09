@@ -21,12 +21,12 @@ class ButtonMenuPattern extends StatelessWidget {
         width: 300,
         child: Row(
           children: [
-            SizedBox(
-              height: 15,
+            const SizedBox(
+              width: 20,
             ),
             Image.asset(image),
-            SizedBox(
-              height: 15,
+            const SizedBox(
+              width: 20,
             ),
             Text(title),
           ],
