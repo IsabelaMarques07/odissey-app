@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:odysseyapp/src/app/components/button_menu_pattern/button_menu_pattern.dart';
 import 'package:odysseyapp/src/app/components/title_pattern/title_pattern.dart';
+import 'package:odysseyapp/src/app/modules/choose_drone_acessory_page/choose_drone_accessory_page.dart';
+import 'package:odysseyapp/src/app/modules/choose_drone_model_page/choose_drone_model_page.dart';
+import 'package:odysseyapp/src/app/modules/info_mars_page/info_mars_page.dart';
+import 'package:odysseyapp/src/app/modules/login_page/login_page.dart';
 import '../../utils/export.dart';
 
 class HomePage extends StatelessWidget {
@@ -19,22 +23,50 @@ class HomePage extends StatelessWidget {
             const SizedBox(height: 40),
             ButtonMenuPattern(
                 title: 'Galeria da Nasa',
-                cardFunction: () {},
+                cardFunction: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => ChooseDroneAcessoryPage(),
+                    ),
+                  );
+                },
                 image: 'assets/images/foguetinho.png'),
             const SizedBox(height: 20),
             ButtonMenuPattern(
                 title: 'Gerenciar Viagens',
-                cardFunction: () {},
+                cardFunction: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => InfoMarsPage(),
+                    ),
+                  );
+                },
                 image: 'assets/images/analysis.png'),
             const SizedBox(height: 20),
             ButtonMenuPattern(
+                cardFunction: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => ChooseDroneModelPage(),
+                    ),
+                  );
+                },
                 title: 'Pedido de Drone',
-                cardFunction: () {},
                 image: 'assets/images/mão.png'),
             const SizedBox(height: 40),
             ButtonMenuPattern(
                 title: 'Sair da Conta',
-                cardFunction: () {},
+                cardFunction: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => LoginPage(),
+                    ),
+                  );
+                },
                 image: 'assets/images/logout.png'),
           ],
         ),
