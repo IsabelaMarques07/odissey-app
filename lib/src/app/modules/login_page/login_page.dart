@@ -6,7 +6,6 @@ import 'package:odysseyapp/src/app/modules/home/home_page.dart';
 import '../../utils/export.dart';
 
 class LoginPage extends StatelessWidget {
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -20,29 +19,30 @@ class LoginPage extends StatelessWidget {
           child: Column(
             children: [
               Image.asset(
-                'images/bigbug_768.png',
+                'assets/images/foguete.png',
               ),
               const SizedBox(
                 height: 30,
               ),
               TitlePattern(
-                titleText:'OdysseyApp',
+                titleText: 'OdysseyApp',
               ),
               const SizedBox(height: 15),
               InputPattern(label: eMail),
               const SizedBox(height: 15),
               InputPattern(label: password),
               const SizedBox(height: 15),
-              ButtonPattern(                onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => HomePage(),
-                    ),
-                  );
-                },
-                buttonText: 'Entrar'),
-                const SizedBox(height: 15),
+              ButtonPattern(
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => HomePage(),
+                      ),
+                    );
+                  },
+                  buttonText: 'Entrar'),
+              const SizedBox(height: 15),
             ],
           ),
         ),
